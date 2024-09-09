@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERB 250-XI - Bike Details</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./bikestyle.css">
+</head>
+<body>
+    <section class="bike-details">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/bike1.jpg" alt="ERB 250-XI Image 1"></div>
+                <div class="swiper-slide"><img src="../img/bike2.jpg" alt="ERB 250-XI Image 2"></div>
+                <div class="swiper-slide"><img src="../img/bike3.jpg" alt="ERB 250-XI Image 3"></div>
+                <!-- Add more slides as needed -->
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="specifications">
+            <h2>ERB 250-XI Features</h2>
+            <ul>
+                <li><strong>Battery : </strong>60V/32AH</li>
+                <li><strong>Range : </strong> 50-60Kmpc with Graphene Batt.</li>
+                <li><strong>Charging Time : </strong> 06-08Hrs</li>
+                <li><strong>Speedometer : </strong>Digital</li>
+                <li><strong>Loading Capacity : </strong>160 kg</li>
+                <li><strong>Charger : </strong>Microcharger with Auto Cut 2-5 AMPS</li>
+                <!-- Add more specifications as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 2000, // 2 seconds
+                disableOnInteraction: false, // Continue autoplay after user interactions
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true, // Infinite loop mode
+        });
+          
+    </script>
+</body>
+</html>
